@@ -1,10 +1,15 @@
-function calculate(){
-    var field1=document.getElementById("num1").value;
-    var field2=document.getElementById("num2").value;
+function calc() {
+    var field1 = document.getElementById("number1").value;
+    var field2 = document.getElementById("number2").value;
+   
+    var result = parseFloat(field1) + parseFloat(field2);
 
-    var result= parseInt(field1)+parseInt(field2);
-
-    if(!isNaN(result)){
-        document.getElementById("answer").innerHTML=result;
+    if(!isNaN(answer))
+    {
+        document.getElementById("result").innerHTML="The answer is "
+         +  result;
     }
+
+
+
 }
