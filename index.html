@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src = "./script.js"></script>   
 </head>
 <body>
    
@@ -13,18 +14,19 @@
     That does<br>
     Addition
     </h1>
-    <h2 id = "answer"> </h2>
-<div>
+    
+<form>
     First Number: <input type= "text" id = "number1"/><br>
     Second Number: <input type= "text" id = "number2"/><br>
     
-    Click for Sum: <button onclick = "calc();">Calculate</button>
-
-    <input type = "text" id="result"/>
+    Click for Sum: <input type = "button" value = "=" onclick = "calc()"/>
+    
+   
 
    
-    </div>
-    <script src = "script.js"></script>  
+</form>
+<span id = "result"></span>
+   
     
     
     
